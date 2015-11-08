@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF064D661BBD407D00120736 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF064D651BBD407C00120736 /* Track.swift */; };
+		BF064D6A1BBD482B00120736 /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF064D691BBD482B00120736 /* RestApiManager.swift */; };
+		BF064D6C1BBD52DE00120736 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF064D6B1BBD52DE00120736 /* Group.swift */; };
+		BF064D6E1BBD56AB00120736 /* Contest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF064D6D1BBD56AB00120736 /* Contest.swift */; };
+		BF0D5CD41BD4FE2500103094 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0D5CD31BD4FE2500103094 /* SwiftyJSON.swift */; settings = {ASSET_TAGS = (); }; };
+		BF1A69781BD4AA9E00575C4F /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A69771BD4AA9E00575C4F /* HomeTableViewCell.swift */; };
+		BF1A697A1BD4B5EE00575C4F /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A69791BD4B5EE00575C4F /* HomeTableViewController.swift */; };
+		BF1A697C1BD4E30A00575C4F /* HomeDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A697B1BD4E30A00575C4F /* HomeDetailsTableViewController.swift */; };
+		BF1A697E1BD4E32400575C4F /* HomeDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A697D1BD4E32400575C4F /* HomeDetailsTableViewCell.swift */; };
+		BF4E79041BD87920004FCFF1 /* JSONHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4E79031BD87920004FCFF1 /* JSONHelpers.swift */; settings = {ASSET_TAGS = (); }; };
+		BF53ADC91BD8B8A500382135 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF53ADC81BD8B8A500382135 /* Constants.swift */; settings = {ASSET_TAGS = (); }; };
+		BF53ADCB1BD8BD9C00382135 /* Me.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF53ADCA1BD8BD9C00382135 /* Me.swift */; settings = {ASSET_TAGS = (); }; };
+		BF6F2A4C1BBA54E600697091 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6F2A4B1BBA54E600697091 /* GroupsViewController.swift */; };
+		BF6F2A561BBA6A6D00697091 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6F2A551BBA6A6D00697091 /* ProfileTableViewController.swift */; };
+		BF6F2A581BBA79DB00697091 /* ProfileDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6F2A571BBA79DB00697091 /* ProfileDetailsTableViewController.swift */; };
+		BFBD44581BB52DC5001D7676 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBD44571BB52DC5001D7676 /* AppDelegate.swift */; };
+		BFBD445F1BB52DC5001D7676 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBD445D1BB52DC5001D7676 /* Main.storyboard */; };
+		BFBD44611BB52DC5001D7676 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFBD44601BB52DC5001D7676 /* Images.xcassets */; };
+		BFBD44641BB52DC5001D7676 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFBD44621BB52DC5001D7676 /* LaunchScreen.xib */; };
+		BFBD44701BB52DC5001D7676 /* NostrajamusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBD446F1BB52DC5001D7676 /* NostrajamusTests.swift */; };
+		BFC2F5BE1BDE1641007FFE87 /* GlobalPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F5BD1BDE1641007FFE87 /* GlobalPlayer.swift */; settings = {ASSET_TAGS = (); }; };
+		BFC2F60F1BEB073C007FFE87 /* NSMutableArray+STKAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F5FD1BEB073C007FFE87 /* NSMutableArray+STKAudioPlayer.m */; settings = {ASSET_TAGS = (); }; };
+		BFC2F6101BEB073C007FFE87 /* STKAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F5FF1BEB073C007FFE87 /* STKAudioPlayer.m */; settings = {ASSET_TAGS = (); }; };
+		BFC2F6111BEB073C007FFE87 /* STKAutoRecoveringHTTPDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F6011BEB073C007FFE87 /* STKAutoRecoveringHTTPDataSource.m */; settings = {ASSET_TAGS = (); }; };
+		BFC2F6121BEB073C007FFE87 /* STKCoreFoundationDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F6031BEB073C007FFE87 /* STKCoreFoundationDataSource.m */; settings = {ASSET_TAGS = (); }; };
+		BFC2F6131BEB073C007FFE87 /* STKDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F6051BEB073C007FFE87 /* STKDataSource.m */; settings = {ASSET_TAGS = (); }; };
+		BFC2F6141BEB073C007FFE87 /* STKDataSourceWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F6071BEB073C007FFE87 /* STKDataSourceWrapper.m */; settings = {ASSET_TAGS = (); }; };
+		BFC2F6151BEB073C007FFE87 /* STKHTTPDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F6091BEB073C007FFE87 /* STKHTTPDataSource.m */; settings = {ASSET_TAGS = (); }; };
+		BFC2F6161BEB073C007FFE87 /* STKLocalFileDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F60B1BEB073C007FFE87 /* STKLocalFileDataSource.m */; settings = {ASSET_TAGS = (); }; };
+		BFC2F6171BEB073C007FFE87 /* STKQueueEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F60D1BEB073C007FFE87 /* STKQueueEntry.m */; settings = {ASSET_TAGS = (); }; };
+		BFE829C31BBD24EF00DF843D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE829C21BBD24EF00DF843D /* User.swift */; };
+		BFE829C51BBD264100DF843D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE829C41BBD264100DF843D /* LoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFBD446A1BB52DC5001D7676 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFBD444A1BB52DC5001D7676 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFBD44511BB52DC5001D7676;
+			remoteInfo = Nostrajamus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF064D651BBD407C00120736 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		BF064D691BBD482B00120736 /* RestApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
+		BF064D6B1BBD52DE00120736 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		BF064D6D1BBD56AB00120736 /* Contest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contest.swift; sourceTree = "<group>"; };
+		BF0D5CD31BD4FE2500103094 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		BF1A69771BD4AA9E00575C4F /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		BF1A69791BD4B5EE00575C4F /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		BF1A697B1BD4E30A00575C4F /* HomeDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDetailsTableViewController.swift; sourceTree = "<group>"; };
+		BF1A697D1BD4E32400575C4F /* HomeDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		BF3C88A21BD4E80700015A5E /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
+		BF4E79031BD87920004FCFF1 /* JSONHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHelpers.swift; sourceTree = "<group>"; };
+		BF53ADC81BD8B8A500382135 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BF53ADCA1BD8BD9C00382135 /* Me.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Me.swift; sourceTree = "<group>"; };
+		BF6F2A4B1BBA54E600697091 /* GroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
+		BF6F2A551BBA6A6D00697091 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		BF6F2A571BBA79DB00697091 /* ProfileDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDetailsTableViewController.swift; sourceTree = "<group>"; };
+		BFBD44521BB52DC5001D7676 /* Nostrajamus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nostrajamus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFBD44561BB52DC5001D7676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFBD44571BB52DC5001D7676 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BFBD445E1BB52DC5001D7676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BFBD44601BB52DC5001D7676 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BFBD44631BB52DC5001D7676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BFBD44691BB52DC5001D7676 /* NostrajamusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NostrajamusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFBD446E1BB52DC5001D7676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFBD446F1BB52DC5001D7676 /* NostrajamusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NostrajamusTests.swift; sourceTree = "<group>"; };
+		BFC2F5BD1BDE1641007FFE87 /* GlobalPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalPlayer.swift; sourceTree = "<group>"; };
+		BFC2F5FB1BEB073B007FFE87 /* Nostrajamus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nostrajamus-Bridging-Header.h"; sourceTree = "<group>"; };
+		BFC2F5FC1BEB073C007FFE87 /* NSMutableArray+STKAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+STKAudioPlayer.h"; sourceTree = "<group>"; };
+		BFC2F5FD1BEB073C007FFE87 /* NSMutableArray+STKAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+STKAudioPlayer.m"; sourceTree = "<group>"; };
+		BFC2F5FE1BEB073C007FFE87 /* STKAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKAudioPlayer.h; sourceTree = "<group>"; };
+		BFC2F5FF1BEB073C007FFE87 /* STKAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKAudioPlayer.m; sourceTree = "<group>"; };
+		BFC2F6001BEB073C007FFE87 /* STKAutoRecoveringHTTPDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKAutoRecoveringHTTPDataSource.h; sourceTree = "<group>"; };
+		BFC2F6011BEB073C007FFE87 /* STKAutoRecoveringHTTPDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKAutoRecoveringHTTPDataSource.m; sourceTree = "<group>"; };
+		BFC2F6021BEB073C007FFE87 /* STKCoreFoundationDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKCoreFoundationDataSource.h; sourceTree = "<group>"; };
+		BFC2F6031BEB073C007FFE87 /* STKCoreFoundationDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKCoreFoundationDataSource.m; sourceTree = "<group>"; };
+		BFC2F6041BEB073C007FFE87 /* STKDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKDataSource.h; sourceTree = "<group>"; };
+		BFC2F6051BEB073C007FFE87 /* STKDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKDataSource.m; sourceTree = "<group>"; };
+		BFC2F6061BEB073C007FFE87 /* STKDataSourceWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKDataSourceWrapper.h; sourceTree = "<group>"; };
+		BFC2F6071BEB073C007FFE87 /* STKDataSourceWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKDataSourceWrapper.m; sourceTree = "<group>"; };
+		BFC2F6081BEB073C007FFE87 /* STKHTTPDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKHTTPDataSource.h; sourceTree = "<group>"; };
+		BFC2F6091BEB073C007FFE87 /* STKHTTPDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKHTTPDataSource.m; sourceTree = "<group>"; };
+		BFC2F60A1BEB073C007FFE87 /* STKLocalFileDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKLocalFileDataSource.h; sourceTree = "<group>"; };
+		BFC2F60B1BEB073C007FFE87 /* STKLocalFileDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKLocalFileDataSource.m; sourceTree = "<group>"; };
+		BFC2F60C1BEB073C007FFE87 /* STKQueueEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKQueueEntry.h; sourceTree = "<group>"; };
+		BFC2F60D1BEB073C007FFE87 /* STKQueueEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKQueueEntry.m; sourceTree = "<group>"; };
+		BFC2F60E1BEB073C007FFE87 /* StreamingKit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StreamingKit-Prefix.pch"; sourceTree = "<group>"; };
+		BFE829C21BBD24EF00DF843D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BFE829C41BBD264100DF843D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFBD444F1BB52DC5001D7676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFBD44661BB52DC5001D7676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF064D681BBD481900120736 /* DAL */ = {
+			isa = PBXGroup;
+			children = (
+				BF064D691BBD482B00120736 /* RestApiManager.swift */,
+				BF0D5CD31BD4FE2500103094 /* SwiftyJSON.swift */,
+			);
+			path = DAL;
+			sourceTree = "<group>";
+		};
+		BF064D711BD0C7A600120736 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BF3C88A21BD4E80700015A5E /* fontawesome-webfont.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		BF4E79021BD878F7004FCFF1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BF4E79031BD87920004FCFF1 /* JSONHelpers.swift */,
+				BF53ADC81BD8B8A500382135 /* Constants.swift */,
+			);
+			name = Helpers;
+			path = DAL;
+			sourceTree = "<group>";
+		};
+		BFBD44491BB52DC5001D7676 = {
+			isa = PBXGroup;
+			children = (
+				BFBD44541BB52DC5001D7676 /* Nostrajamus */,
+				BFBD446C1BB52DC5001D7676 /* NostrajamusTests */,
+				BFBD44531BB52DC5001D7676 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFBD44531BB52DC5001D7676 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFBD44521BB52DC5001D7676 /* Nostrajamus.app */,
+				BFBD44691BB52DC5001D7676 /* NostrajamusTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFBD44541BB52DC5001D7676 /* Nostrajamus */ = {
+			isa = PBXGroup;
+			children = (
+				BFBD445D1BB52DC5001D7676 /* Main.storyboard */,
+				BFE829C41BBD264100DF843D /* LoginViewController.swift */,
+				BF1A69791BD4B5EE00575C4F /* HomeTableViewController.swift */,
+				BF1A69771BD4AA9E00575C4F /* HomeTableViewCell.swift */,
+				BF1A697B1BD4E30A00575C4F /* HomeDetailsTableViewController.swift */,
+				BF1A697D1BD4E32400575C4F /* HomeDetailsTableViewCell.swift */,
+				BF6F2A4B1BBA54E600697091 /* GroupsViewController.swift */,
+				BF6F2A551BBA6A6D00697091 /* ProfileTableViewController.swift */,
+				BF6F2A571BBA79DB00697091 /* ProfileDetailsTableViewController.swift */,
+				BFC2F5BC1BDE15E2007FFE87 /* GlobalPlayer */,
+				BFC2F5FA1BEB0711007FFE87 /* StreamingKit */,
+				BFE829C11BBD24EF00DF843D /* Models */,
+				BF064D681BBD481900120736 /* DAL */,
+				BF4E79021BD878F7004FCFF1 /* Helpers */,
+				BF064D711BD0C7A600120736 /* Fonts */,
+				BFBD44551BB52DC5001D7676 /* Supporting Files */,
+			);
+			path = Nostrajamus;
+			sourceTree = "<group>";
+		};
+		BFBD44551BB52DC5001D7676 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFBD44621BB52DC5001D7676 /* LaunchScreen.xib */,
+				BFBD44601BB52DC5001D7676 /* Images.xcassets */,
+				BFBD44571BB52DC5001D7676 /* AppDelegate.swift */,
+				BFBD44561BB52DC5001D7676 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFBD446C1BB52DC5001D7676 /* NostrajamusTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFBD446F1BB52DC5001D7676 /* NostrajamusTests.swift */,
+				BFBD446D1BB52DC5001D7676 /* Supporting Files */,
+			);
+			path = NostrajamusTests;
+			sourceTree = "<group>";
+		};
+		BFBD446D1BB52DC5001D7676 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFBD446E1BB52DC5001D7676 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFC2F5BC1BDE15E2007FFE87 /* GlobalPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				BFC2F5BD1BDE1641007FFE87 /* GlobalPlayer.swift */,
+			);
+			name = GlobalPlayer;
+			sourceTree = "<group>";
+		};
+		BFC2F5FA1BEB0711007FFE87 /* StreamingKit */ = {
+			isa = PBXGroup;
+			children = (
+				BFC2F5FC1BEB073C007FFE87 /* NSMutableArray+STKAudioPlayer.h */,
+				BFC2F5FD1BEB073C007FFE87 /* NSMutableArray+STKAudioPlayer.m */,
+				BFC2F5FE1BEB073C007FFE87 /* STKAudioPlayer.h */,
+				BFC2F5FF1BEB073C007FFE87 /* STKAudioPlayer.m */,
+				BFC2F6001BEB073C007FFE87 /* STKAutoRecoveringHTTPDataSource.h */,
+				BFC2F6011BEB073C007FFE87 /* STKAutoRecoveringHTTPDataSource.m */,
+				BFC2F6021BEB073C007FFE87 /* STKCoreFoundationDataSource.h */,
+				BFC2F6031BEB073C007FFE87 /* STKCoreFoundationDataSource.m */,
+				BFC2F6041BEB073C007FFE87 /* STKDataSource.h */,
+				BFC2F6051BEB073C007FFE87 /* STKDataSource.m */,
+				BFC2F6061BEB073C007FFE87 /* STKDataSourceWrapper.h */,
+				BFC2F6071BEB073C007FFE87 /* STKDataSourceWrapper.m */,
+				BFC2F6081BEB073C007FFE87 /* STKHTTPDataSource.h */,
+				BFC2F6091BEB073C007FFE87 /* STKHTTPDataSource.m */,
+				BFC2F60A1BEB073C007FFE87 /* STKLocalFileDataSource.h */,
+				BFC2F60B1BEB073C007FFE87 /* STKLocalFileDataSource.m */,
+				BFC2F60C1BEB073C007FFE87 /* STKQueueEntry.h */,
+				BFC2F60D1BEB073C007FFE87 /* STKQueueEntry.m */,
+				BFC2F60E1BEB073C007FFE87 /* StreamingKit-Prefix.pch */,
+				BFC2F5FB1BEB073B007FFE87 /* Nostrajamus-Bridging-Header.h */,
+			);
+			name = StreamingKit;
+			sourceTree = "<group>";
+		};
+		BFE829C11BBD24EF00DF843D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BF53ADCA1BD8BD9C00382135 /* Me.swift */,
+				BFE829C21BBD24EF00DF843D /* User.swift */,
+				BF064D651BBD407C00120736 /* Track.swift */,
+				BF064D6B1BBD52DE00120736 /* Group.swift */,
+				BF064D6D1BBD56AB00120736 /* Contest.swift */,
+			);
+			name = Models;
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFBD44511BB52DC5001D7676 /* Nostrajamus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFBD44731BB52DC5001D7676 /* Build configuration list for PBXNativeTarget "Nostrajamus" */;
+			buildPhases = (
+				BFBD444E1BB52DC5001D7676 /* Sources */,
+				BFBD444F1BB52DC5001D7676 /* Frameworks */,
+				BFBD44501BB52DC5001D7676 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nostrajamus;
+			productName = Nostrajamus;
+			productReference = BFBD44521BB52DC5001D7676 /* Nostrajamus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFBD44681BB52DC5001D7676 /* NostrajamusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFBD44761BB52DC5001D7676 /* Build configuration list for PBXNativeTarget "NostrajamusTests" */;
+			buildPhases = (
+				BFBD44651BB52DC5001D7676 /* Sources */,
+				BFBD44661BB52DC5001D7676 /* Frameworks */,
+				BFBD44671BB52DC5001D7676 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFBD446B1BB52DC5001D7676 /* PBXTargetDependency */,
+			);
+			name = NostrajamusTests;
+			productName = NostrajamusTests;
+			productReference = BFBD44691BB52DC5001D7676 /* NostrajamusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFBD444A1BB52DC5001D7676 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Nostrajamus, LLC";
+				TargetAttributes = {
+					BFBD44511BB52DC5001D7676 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = XW29WN9TBF;
+					};
+					BFBD44681BB52DC5001D7676 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = BFBD44511BB52DC5001D7676;
+					};
+				};
+			};
+			buildConfigurationList = BFBD444D1BB52DC5001D7676 /* Build configuration list for PBXProject "Nostrajamus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFBD44491BB52DC5001D7676;
+			productRefGroup = BFBD44531BB52DC5001D7676 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFBD44511BB52DC5001D7676 /* Nostrajamus */,
+				BFBD44681BB52DC5001D7676 /* NostrajamusTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFBD44501BB52DC5001D7676 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFBD445F1BB52DC5001D7676 /* Main.storyboard in Resources */,
+				BFBD44641BB52DC5001D7676 /* LaunchScreen.xib in Resources */,
+				BFBD44611BB52DC5001D7676 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFBD44671BB52DC5001D7676 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFBD444E1BB52DC5001D7676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE829C51BBD264100DF843D /* LoginViewController.swift in Sources */,
+				BFC2F6101BEB073C007FFE87 /* STKAudioPlayer.m in Sources */,
+				BFC2F6161BEB073C007FFE87 /* STKLocalFileDataSource.m in Sources */,
+				BFC2F6171BEB073C007FFE87 /* STKQueueEntry.m in Sources */,
+				BF53ADC91BD8B8A500382135 /* Constants.swift in Sources */,
+				BF064D6E1BBD56AB00120736 /* Contest.swift in Sources */,
+				BF1A697E1BD4E32400575C4F /* HomeDetailsTableViewCell.swift in Sources */,
+				BFC2F60F1BEB073C007FFE87 /* NSMutableArray+STKAudioPlayer.m in Sources */,
+				BFC2F6111BEB073C007FFE87 /* STKAutoRecoveringHTTPDataSource.m in Sources */,
+				BFC2F6131BEB073C007FFE87 /* STKDataSource.m in Sources */,
+				BFC2F5BE1BDE1641007FFE87 /* GlobalPlayer.swift in Sources */,
+				BF0D5CD41BD4FE2500103094 /* SwiftyJSON.swift in Sources */,
+				BFC2F6141BEB073C007FFE87 /* STKDataSourceWrapper.m in Sources */,
+				BF1A69781BD4AA9E00575C4F /* HomeTableViewCell.swift in Sources */,
+				BF1A697C1BD4E30A00575C4F /* HomeDetailsTableViewController.swift in Sources */,
+				BFBD44581BB52DC5001D7676 /* AppDelegate.swift in Sources */,
+				BF1A697A1BD4B5EE00575C4F /* HomeTableViewController.swift in Sources */,
+				BF064D6A1BBD482B00120736 /* RestApiManager.swift in Sources */,
+				BF4E79041BD87920004FCFF1 /* JSONHelpers.swift in Sources */,
+				BFC2F6151BEB073C007FFE87 /* STKHTTPDataSource.m in Sources */,
+				BF53ADCB1BD8BD9C00382135 /* Me.swift in Sources */,
+				BF064D6C1BBD52DE00120736 /* Group.swift in Sources */,
+				BF6F2A561BBA6A6D00697091 /* ProfileTableViewController.swift in Sources */,
+				BF064D661BBD407D00120736 /* Track.swift in Sources */,
+				BF6F2A4C1BBA54E600697091 /* GroupsViewController.swift in Sources */,
+				BF6F2A581BBA79DB00697091 /* ProfileDetailsTableViewController.swift in Sources */,
+				BFE829C31BBD24EF00DF843D /* User.swift in Sources */,
+				BFC2F6121BEB073C007FFE87 /* STKCoreFoundationDataSource.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFBD44651BB52DC5001D7676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFBD44701BB52DC5001D7676 /* NostrajamusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFBD446B1BB52DC5001D7676 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFBD44511BB52DC5001D7676 /* Nostrajamus */;
+			targetProxy = BFBD446A1BB52DC5001D7676 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BFBD445D1BB52DC5001D7676 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFBD445E1BB52DC5001D7676 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BFBD44621BB52DC5001D7676 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFBD44631BB52DC5001D7676 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFBD44711BB52DC5001D7676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Nostrajamus/Nostrajamus-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFBD44721BB52DC5001D7676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Nostrajamus/Nostrajamus-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFBD44741BB52DC5001D7676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Nostrajamus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "vincent.ning.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Nostrajamus/Nostrajamus-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BFBD44751BB52DC5001D7676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Nostrajamus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "vincent.ning.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Nostrajamus/Nostrajamus-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		BFBD44771BB52DC5001D7676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NostrajamusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "vincent.ning.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nostrajamus.app/Nostrajamus";
+			};
+			name = Debug;
+		};
+		BFBD44781BB52DC5001D7676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NostrajamusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "vincent.ning.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nostrajamus.app/Nostrajamus";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFBD444D1BB52DC5001D7676 /* Build configuration list for PBXProject "Nostrajamus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFBD44711BB52DC5001D7676 /* Debug */,
+				BFBD44721BB52DC5001D7676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFBD44731BB52DC5001D7676 /* Build configuration list for PBXNativeTarget "Nostrajamus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFBD44741BB52DC5001D7676 /* Debug */,
+				BFBD44751BB52DC5001D7676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFBD44761BB52DC5001D7676 /* Build configuration list for PBXNativeTarget "NostrajamusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFBD44771BB52DC5001D7676 /* Debug */,
+				BFBD44781BB52DC5001D7676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFBD444A1BB52DC5001D7676 /* Project object */;
+}

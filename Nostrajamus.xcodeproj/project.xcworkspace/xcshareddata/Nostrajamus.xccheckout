@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A3049E3B-5702-43C1-AED7-24FBA28BAB71</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Nostrajamus</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6CAC9D18FC14C63241062ABFA2DEBE0CD6FE6756</key>
+		<string>https://github.com/vcn8fn/Nostrajamus_iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Nostrajamus.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6CAC9D18FC14C63241062ABFA2DEBE0CD6FE6756</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/vcn8fn/Nostrajamus_iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6CAC9D18FC14C63241062ABFA2DEBE0CD6FE6756</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6CAC9D18FC14C63241062ABFA2DEBE0CD6FE6756</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Nostrajamus</string>
+		</dict>
+	</array>
+</dict>
+</plist>
