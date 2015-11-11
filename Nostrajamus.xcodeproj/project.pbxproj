@@ -11,14 +11,14 @@
 		BF064D6A1BBD482B00120736 /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF064D691BBD482B00120736 /* RestApiManager.swift */; };
 		BF064D6C1BBD52DE00120736 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF064D6B1BBD52DE00120736 /* Group.swift */; };
 		BF064D6E1BBD56AB00120736 /* Contest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF064D6D1BBD56AB00120736 /* Contest.swift */; };
-		BF0D5CD41BD4FE2500103094 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0D5CD31BD4FE2500103094 /* SwiftyJSON.swift */; settings = {ASSET_TAGS = (); }; };
+		BF0D5CD41BD4FE2500103094 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0D5CD31BD4FE2500103094 /* SwiftyJSON.swift */; };
 		BF1A69781BD4AA9E00575C4F /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A69771BD4AA9E00575C4F /* HomeTableViewCell.swift */; };
 		BF1A697A1BD4B5EE00575C4F /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A69791BD4B5EE00575C4F /* HomeTableViewController.swift */; };
 		BF1A697C1BD4E30A00575C4F /* HomeDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A697B1BD4E30A00575C4F /* HomeDetailsTableViewController.swift */; };
 		BF1A697E1BD4E32400575C4F /* HomeDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A697D1BD4E32400575C4F /* HomeDetailsTableViewCell.swift */; };
-		BF4E79041BD87920004FCFF1 /* JSONHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4E79031BD87920004FCFF1 /* JSONHelpers.swift */; settings = {ASSET_TAGS = (); }; };
-		BF53ADC91BD8B8A500382135 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF53ADC81BD8B8A500382135 /* Constants.swift */; settings = {ASSET_TAGS = (); }; };
-		BF53ADCB1BD8BD9C00382135 /* Me.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF53ADCA1BD8BD9C00382135 /* Me.swift */; settings = {ASSET_TAGS = (); }; };
+		BF4E79041BD87920004FCFF1 /* JSONHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4E79031BD87920004FCFF1 /* JSONHelpers.swift */; };
+		BF53ADC91BD8B8A500382135 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF53ADC81BD8B8A500382135 /* Constants.swift */; };
+		BF53ADCB1BD8BD9C00382135 /* Me.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF53ADCA1BD8BD9C00382135 /* Me.swift */; };
 		BF6F2A4C1BBA54E600697091 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6F2A4B1BBA54E600697091 /* GroupsViewController.swift */; };
 		BF6F2A561BBA6A6D00697091 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6F2A551BBA6A6D00697091 /* ProfileTableViewController.swift */; };
 		BF6F2A581BBA79DB00697091 /* ProfileDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6F2A571BBA79DB00697091 /* ProfileDetailsTableViewController.swift */; };
@@ -27,16 +27,16 @@
 		BFBD44611BB52DC5001D7676 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFBD44601BB52DC5001D7676 /* Images.xcassets */; };
 		BFBD44641BB52DC5001D7676 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFBD44621BB52DC5001D7676 /* LaunchScreen.xib */; };
 		BFBD44701BB52DC5001D7676 /* NostrajamusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBD446F1BB52DC5001D7676 /* NostrajamusTests.swift */; };
-		BFC2F5BE1BDE1641007FFE87 /* GlobalPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F5BD1BDE1641007FFE87 /* GlobalPlayer.swift */; settings = {ASSET_TAGS = (); }; };
-		BFC2F60F1BEB073C007FFE87 /* NSMutableArray+STKAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F5FD1BEB073C007FFE87 /* NSMutableArray+STKAudioPlayer.m */; settings = {ASSET_TAGS = (); }; };
-		BFC2F6101BEB073C007FFE87 /* STKAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F5FF1BEB073C007FFE87 /* STKAudioPlayer.m */; settings = {ASSET_TAGS = (); }; };
-		BFC2F6111BEB073C007FFE87 /* STKAutoRecoveringHTTPDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F6011BEB073C007FFE87 /* STKAutoRecoveringHTTPDataSource.m */; settings = {ASSET_TAGS = (); }; };
-		BFC2F6121BEB073C007FFE87 /* STKCoreFoundationDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F6031BEB073C007FFE87 /* STKCoreFoundationDataSource.m */; settings = {ASSET_TAGS = (); }; };
-		BFC2F6131BEB073C007FFE87 /* STKDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F6051BEB073C007FFE87 /* STKDataSource.m */; settings = {ASSET_TAGS = (); }; };
-		BFC2F6141BEB073C007FFE87 /* STKDataSourceWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F6071BEB073C007FFE87 /* STKDataSourceWrapper.m */; settings = {ASSET_TAGS = (); }; };
-		BFC2F6151BEB073C007FFE87 /* STKHTTPDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F6091BEB073C007FFE87 /* STKHTTPDataSource.m */; settings = {ASSET_TAGS = (); }; };
-		BFC2F6161BEB073C007FFE87 /* STKLocalFileDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F60B1BEB073C007FFE87 /* STKLocalFileDataSource.m */; settings = {ASSET_TAGS = (); }; };
-		BFC2F6171BEB073C007FFE87 /* STKQueueEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F60D1BEB073C007FFE87 /* STKQueueEntry.m */; settings = {ASSET_TAGS = (); }; };
+		BFC2F5BE1BDE1641007FFE87 /* GlobalPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F5BD1BDE1641007FFE87 /* GlobalPlayer.swift */; };
+		BFC2F60F1BEB073C007FFE87 /* NSMutableArray+STKAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F5FD1BEB073C007FFE87 /* NSMutableArray+STKAudioPlayer.m */; };
+		BFC2F6101BEB073C007FFE87 /* STKAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F5FF1BEB073C007FFE87 /* STKAudioPlayer.m */; };
+		BFC2F6111BEB073C007FFE87 /* STKAutoRecoveringHTTPDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F6011BEB073C007FFE87 /* STKAutoRecoveringHTTPDataSource.m */; };
+		BFC2F6121BEB073C007FFE87 /* STKCoreFoundationDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F6031BEB073C007FFE87 /* STKCoreFoundationDataSource.m */; };
+		BFC2F6131BEB073C007FFE87 /* STKDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F6051BEB073C007FFE87 /* STKDataSource.m */; };
+		BFC2F6141BEB073C007FFE87 /* STKDataSourceWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F6071BEB073C007FFE87 /* STKDataSourceWrapper.m */; };
+		BFC2F6151BEB073C007FFE87 /* STKHTTPDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F6091BEB073C007FFE87 /* STKHTTPDataSource.m */; };
+		BFC2F6161BEB073C007FFE87 /* STKLocalFileDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F60B1BEB073C007FFE87 /* STKLocalFileDataSource.m */; };
+		BFC2F6171BEB073C007FFE87 /* STKQueueEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F60D1BEB073C007FFE87 /* STKQueueEntry.m */; };
 		BFE829C31BBD24EF00DF843D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE829C21BBD24EF00DF843D /* User.swift */; };
 		BFE829C51BBD264100DF843D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE829C41BBD264100DF843D /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
@@ -178,7 +178,6 @@
 				BF6F2A551BBA6A6D00697091 /* ProfileTableViewController.swift */,
 				BF6F2A571BBA79DB00697091 /* ProfileDetailsTableViewController.swift */,
 				BFC2F5BC1BDE15E2007FFE87 /* GlobalPlayer */,
-				BFC2F5FA1BEB0711007FFE87 /* StreamingKit */,
 				BFE829C11BBD24EF00DF843D /* Models */,
 				BF064D681BBD481900120736 /* DAL */,
 				BF4E79021BD878F7004FCFF1 /* Helpers */,
@@ -219,6 +218,7 @@
 		BFC2F5BC1BDE15E2007FFE87 /* GlobalPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				BFC2F5FA1BEB0711007FFE87 /* StreamingKit */,
 				BFC2F5BD1BDE1641007FFE87 /* GlobalPlayer.swift */,
 			);
 			name = GlobalPlayer;
