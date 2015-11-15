@@ -243,7 +243,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pYq-pk-UcZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1998" y="476"/>
+            <point key="canvasLocation" x="1998" y="530"/>
         </scene>
         <!--Profile-->
         <scene sceneID="1TL-Qm-e1t">
@@ -632,12 +632,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="34C-qj-Qz5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-809" y="476"/>
+            <point key="canvasLocation" x="-464" y="476"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Global Tab Bar View Controller-->
         <scene sceneID="H8C-by-4eY">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="uB8-aZ-hHy" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="uB8-aZ-hHy" customClass="GlobalTabBarViewController" customModule="Nostrajamus" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Qgz-JS-Dst">
@@ -648,11 +648,31 @@
                         <segue destination="CeM-yI-esU" kind="relationship" relationship="viewControllers" id="7YX-cT-2L5"/>
                         <segue destination="Rc6-Wh-lVH" kind="relationship" relationship="viewControllers" id="H46-B3-g29"/>
                         <segue destination="VeV-um-PnK" kind="relationship" relationship="viewControllers" id="ELD-bK-Bdd"/>
+                        <segue destination="OkB-Xn-Vic" kind="relationship" relationship="viewControllers" id="Udg-ty-2Js"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ipu-Vo-B8o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="348" y="476"/>
+        </scene>
+        <!--Now Playing-->
+        <scene sceneID="mNE-Rn-P6y">
+            <objects>
+                <viewController title="Now Playing" id="OkB-Xn-Vic" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FQT-2b-JFq"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZbX-O1-sI2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dHi-eb-w5N">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Now Playing" id="QUB-UM-AoP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cfd-E0-h1m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="348" y="1267"/>
         </scene>
         <!--Profile-->
         <scene sceneID="L2c-Kp-WV4">
@@ -712,7 +732,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dr6-B1-gEz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1242" y="476"/>
+            <point key="canvasLocation" x="1242" y="530"/>
         </scene>
     </scenes>
     <resources>

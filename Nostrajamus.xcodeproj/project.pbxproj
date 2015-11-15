@@ -22,6 +22,7 @@
 		BF6F2A4C1BBA54E600697091 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6F2A4B1BBA54E600697091 /* GroupsViewController.swift */; };
 		BF6F2A561BBA6A6D00697091 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6F2A551BBA6A6D00697091 /* ProfileTableViewController.swift */; };
 		BF6F2A581BBA79DB00697091 /* ProfileDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6F2A571BBA79DB00697091 /* ProfileDetailsTableViewController.swift */; };
+		BFA5ECCA1BF944D7005580D3 /* GlobalTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA5ECC91BF944D7005580D3 /* GlobalTabBarViewController.swift */; };
 		BFBD44581BB52DC5001D7676 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBD44571BB52DC5001D7676 /* AppDelegate.swift */; };
 		BFBD445F1BB52DC5001D7676 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBD445D1BB52DC5001D7676 /* Main.storyboard */; };
 		BFBD44611BB52DC5001D7676 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFBD44601BB52DC5001D7676 /* Images.xcassets */; };
@@ -68,6 +69,7 @@
 		BF6F2A4B1BBA54E600697091 /* GroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		BF6F2A551BBA6A6D00697091 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		BF6F2A571BBA79DB00697091 /* ProfileDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDetailsTableViewController.swift; sourceTree = "<group>"; };
+		BFA5ECC91BF944D7005580D3 /* GlobalTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalTabBarViewController.swift; sourceTree = "<group>"; };
 		BFBD44521BB52DC5001D7676 /* Nostrajamus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nostrajamus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFBD44561BB52DC5001D7676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFBD44571BB52DC5001D7676 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			children = (
 				BFBD445D1BB52DC5001D7676 /* Main.storyboard */,
 				BFE829C41BBD264100DF843D /* LoginViewController.swift */,
+				BFA5ECC91BF944D7005580D3 /* GlobalTabBarViewController.swift */,
 				BF1A69791BD4B5EE00575C4F /* HomeTableViewController.swift */,
 				BF1A69771BD4AA9E00575C4F /* HomeTableViewCell.swift */,
 				BF1A697B1BD4E30A00575C4F /* HomeDetailsTableViewController.swift */,
@@ -383,6 +386,7 @@
 				BF1A697C1BD4E30A00575C4F /* HomeDetailsTableViewController.swift in Sources */,
 				BFBD44581BB52DC5001D7676 /* AppDelegate.swift in Sources */,
 				BF1A697A1BD4B5EE00575C4F /* HomeTableViewController.swift in Sources */,
+				BFA5ECCA1BF944D7005580D3 /* GlobalTabBarViewController.swift in Sources */,
 				BF064D6A1BBD482B00120736 /* RestApiManager.swift in Sources */,
 				BF4E79041BD87920004FCFF1 /* JSONHelpers.swift in Sources */,
 				BFC2F6151BEB073C007FFE87 /* STKHTTPDataSource.m in Sources */,

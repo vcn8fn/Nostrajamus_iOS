@@ -14,8 +14,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    var bombSoundEffect: AVAudioPlayer!
-    
     @IBAction func loginButton(sender: UIButton) {
         
         /* Perform authentication of user */
