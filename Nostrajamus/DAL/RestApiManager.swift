@@ -141,7 +141,6 @@ class RestApiManager: NSObject {
         
         postAPI(Constants.registerURL, payload: payload, onCompletion: { json in
             print(json)
-            var result = json
             if json["token"].stringValue != "" {
                 let token: String = json["token"].stringValue
                 Me.userDefaults.token = token

@@ -13,6 +13,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var errorTextField: UITextView!
     
     @IBAction func loginButton(sender: UIButton) {
         
@@ -26,6 +27,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                     self.performSegueWithIdentifier("login", sender: self)
                 }
                 else {
+                    self.errorTextField.text = "Authentication failed"
                     self.usernameTextField.text = ""
                     self.passwordTextField.text = ""
                 }

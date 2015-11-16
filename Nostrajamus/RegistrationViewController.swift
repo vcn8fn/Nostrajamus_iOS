@@ -13,11 +13,20 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var errorTextField: UITextView!
     
     @IBAction func registerButton(sender: UIButton) {
         RestApiManager.sharedInstance.register(emailTextField.text!, username: usernameTextField.text!, password: passwordTextField.text!) { isRegistered in
             print(isRegistered)
-            var result = isRegistered
+            self.usernameTextField.text = ""
+            self.passwordTextField.text = ""
+            self.emailTextField.text = ""
+            if isRegistered {
+                self.performSegueWithIdentifier("register", sender: self)
+            }
+            else {
+                
+            }
         }
     }
     
