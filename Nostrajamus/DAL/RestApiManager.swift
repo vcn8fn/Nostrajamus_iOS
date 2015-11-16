@@ -24,6 +24,7 @@ class RestApiManager: NSObject {
     
     func postAPI(urlEndpoint: String, payload: [String: AnyObject], onCompletion: (JSON) -> Void) {
         let route = baseURL + urlEndpoint
+//        let route = "http://localhost:8000/api/users/" // For testing purposes
         makeHTTPPostRequest(route, payload: payload, onCompletion: { json, err in
             onCompletion(json as JSON)
         })
@@ -113,6 +114,7 @@ class RestApiManager: NSObject {
         ]
         
         postAPI(Constants.authURL, payload: payload, onCompletion: { json in
+            print(json)
             if json["token"].stringValue != "" {
                 let token: String = json["token"].stringValue
                 Me.userDefaults.token = token
@@ -134,14 +136,21 @@ class RestApiManager: NSObject {
             "password" : password,
             "first_name" : " ",
             "last_name" : " ",
-            "profile_picture" : NSNull(),
             "location": " "
         ]
         
         postAPI(Constants.registerURL, payload: payload, onCompletion: { json in
             print(json)
             var result = json
-            onCompletion(true)
+            if json["token"].stringValue != "" {
+                let token: String = json["token"].stringValue
+                Me.userDefaults.token = token
+                Me.userDefaults.username = username
+                onCompletion(true)
+            }
+            else {
+                onCompletion(false)
+            }
         })
     }
     

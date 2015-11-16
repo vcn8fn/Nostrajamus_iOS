@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Nostrajamus/DAL/RestApiManager.swift"
-            timestampString = "469331023.544592"
+            timestampString = "469334607.590411"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
             landmarkName = "register(_:username:password:onCompletion:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Nostrajamus/DAL/RestApiManager.swift"
-            timestampString = "469330515.729615"
+            timestampString = "469333870.809831"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Nostrajamus/DAL/RestApiManager.swift"
-            timestampString = "469330251.045017"
+            timestampString = "469333870.809831"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "makeHTTPPostRequest(_:payload:onCompletion:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Nostrajamus/DAL/RestApiManager.swift"
-            timestampString = "469330255.955905"
+            timestampString = "469333870.809831"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "makeHTTPPostRequest(_:payload:onCompletion:)"
             landmarkType = "5">
          </BreakpointContent>

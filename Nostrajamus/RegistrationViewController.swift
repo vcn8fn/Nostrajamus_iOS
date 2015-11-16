@@ -15,9 +15,9 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBAction func registerButton(sender: UIButton) {
-        RestApiManager.sharedInstance.register(emailTextField.text!, username: usernameTextField.text!, password: passwordTextField.text!) { json in
-            print(json)
-            var result = json
+        RestApiManager.sharedInstance.register(emailTextField.text!, username: usernameTextField.text!, password: passwordTextField.text!) { isRegistered in
+            print(isRegistered)
+            var result = isRegistered
         }
     }
     
