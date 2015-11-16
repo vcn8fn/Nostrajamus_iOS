@@ -18,6 +18,7 @@ class Constants {
     
     /* REST Endpoints */
     static let authURL: String = "api-token-auth/"
+    static let registerURL: String = "users/"
     static let meURL: String = "users/me/"
     static let contestsURL: String = "contests/"
     static let contestEntriesURL: String = "/entries/"

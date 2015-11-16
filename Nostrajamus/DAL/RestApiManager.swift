@@ -125,6 +125,26 @@ class RestApiManager: NSObject {
         })
     }
     
+    func register(email: String, username: String, password: String, onCompletion: (Bool) -> Void) {
+        
+        let payload: [String: AnyObject] =
+        [
+            "email" : email,
+            "username" : username,
+            "password" : password,
+            "first_name" : " ",
+            "last_name" : " ",
+            "profile_picture" : NSNull(),
+            "location": " "
+        ]
+        
+        postAPI(Constants.registerURL, payload: payload, onCompletion: { json in
+            print(json)
+            var result = json
+            onCompletion(true)
+        })
+    }
+    
     func logout() {
         Me.userDefaults.logoutUser()
         RestApiManager.sharedInstance.contests = [:]
