@@ -37,6 +37,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        RestApiManager.sharedInstance.getCSRFToken()
         
         // Disable keyboard when tapping outside text fields
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")

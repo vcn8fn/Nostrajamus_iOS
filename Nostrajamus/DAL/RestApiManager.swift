@@ -15,16 +15,43 @@ class RestApiManager: NSObject {
     
     var baseURL = Constants.baseURL
     var soundcloudClientId = Constants.soundcloudClientId
+    var csrf_cookie: String = ""
+    var request: NSMutableURLRequest = NSMutableURLRequest(URL: NSURL(string: Constants.baseURL)!)
     
     /* Cached Objects */
     var contests = [Int : Contest]() as Dictionary // [Contest id --> Contest]
     /* End Cached Objects */
     
+    /* CSRF Setup */
+    
+    func getCSRFToken() {
+        let route = Constants.baseURLAuth
+        request = NSMutableURLRequest(URL: NSURL(string: route)!)
+        request.HTTPShouldHandleCookies = true
+        request.allHTTPHeaderFields = NSHTTPCookie.requestHeaderFieldsWithCookies(NSHTTPCookieStorage.sharedHTTPCookieStorage().cookiesForURL(NSURL(string: route)!)!)
+        request.addValue(csrf_cookie, forHTTPHeaderField: "X_CSRFTOKEN")
+        
+        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue(), completionHandler: { response, data, connectionError in
+            let responseHTTP: NSHTTPURLResponse = response as! NSHTTPURLResponse
+            let cookies: NSArray = NSHTTPCookie.cookiesWithResponseHeaderFields(responseHTTP.allHeaderFields as! [String : String], forURL: NSURL(string: route)!)
+            NSHTTPCookieStorage.sharedHTTPCookieStorage().setCookies(cookies as! [NSHTTPCookie], forURL: NSURL(string: route)!, mainDocumentURL: nil)
+            for cookie: NSHTTPCookie in cookies as! [NSHTTPCookie] {
+                if (cookie.name == "csrftoken") {
+                    self.csrf_cookie = cookie.value
+                    break
+                }
+            }
+        })
+        
+    }
+    
+    /* End CSRF Setup */
+    
     /* POST */
     
     func postAPI(urlEndpoint: String, payload: [String: AnyObject], onCompletion: (JSON) -> Void) {
         let route = baseURL + urlEndpoint
-//        let route = "http://localhost:8000/api/users/" // For testing purposes
+        //        let route = "http://localhost:8000/api/users/" // For testing purposes
         makeHTTPPostRequest(route, payload: payload, onCompletion: { json, err in
             onCompletion(json as JSON)
         })
@@ -33,12 +60,19 @@ class RestApiManager: NSObject {
     func makeHTTPPostRequest(urlEndpoint: String, payload: [String: AnyObject], onCompletion: ServiceResponse) {
         let request = NSMutableURLRequest(URL: NSURL(string: urlEndpoint)!)
         request.HTTPMethod = "POST"
+        
+        request.HTTPShouldHandleCookies = true
+        request.allHTTPHeaderFields = NSHTTPCookie.requestHeaderFieldsWithCookies(NSHTTPCookieStorage.sharedHTTPCookieStorage().cookiesForURL(NSURL(string: urlEndpoint)!)!)
+        request.addValue(csrf_cookie, forHTTPHeaderField: "X-CSRFToken")
+        
         request.addValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json; charset=utf-8", forHTTPHeaderField: "Accept")
         
         // Set the POST payload for the request
         do {
             request.HTTPBody = try NSJSONSerialization.dataWithJSONObject(payload, options: [])
+            
+            print(request.allHTTPHeaderFields)
         }
         catch {
             print (error)
@@ -69,6 +103,7 @@ class RestApiManager: NSObject {
     
     func getAPI(urlEndpoint: String, onCompletion: (JSON) -> Void) {
         let route = baseURL + urlEndpoint
+        //        let route = "http://localhost:8000/api/users/" // For testing purposes
         makeHTTPGetRequest(route, onCompletion: { json, err in
             onCompletion(json as JSON)
         })
@@ -114,7 +149,6 @@ class RestApiManager: NSObject {
         ]
         
         postAPI(Constants.authURL, payload: payload, onCompletion: { json in
-            print(json)
             if json["token"].stringValue != "" {
                 let token: String = json["token"].stringValue
                 Me.userDefaults.token = token
@@ -173,18 +207,18 @@ class RestApiManager: NSObject {
             
             /* Create decoders / encoders for these to be able to be stored into NSUserDefaults */
             
-//            for entry in meData["my_entries"].arrayValue {
-//                Me.userDefaults.myEntries = []
-//                let newEntry: Track = JSONHelpers.convertJSONtoTrack(entry)
-//                Me.userDefaults.myEntries.append(newEntry)
-//            }
-//            for track in meData["my_likes"].arrayValue {
-//                let newTrack: Track = JSONHelpers.convertJSONtoTrack(track)
-//                Me.userDefaults.likedTracks.append(newTrack)
-//            }
-//            for group in meData["my_groups"].arrayValue {
-//                Me.userDefaults.myGroups = JSONHelpers.convertJSONtoGroup(group)
-//            }
+            //            for entry in meData["my_entries"].arrayValue {
+            //                Me.userDefaults.myEntries = []
+            //                let newEntry: Track = JSONHelpers.convertJSONtoTrack(entry)
+            //                Me.userDefaults.myEntries.append(newEntry)
+            //            }
+            //            for track in meData["my_likes"].arrayValue {
+            //                let newTrack: Track = JSONHelpers.convertJSONtoTrack(track)
+            //                Me.userDefaults.likedTracks.append(newTrack)
+            //            }
+            //            for group in meData["my_groups"].arrayValue {
+            //                Me.userDefaults.myGroups = JSONHelpers.convertJSONtoGroup(group)
+            //            }
             
             /* End create decoders / encoders for these to be able to be stored into NSUserDefaults */
             
